@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+		<meta charset="UTF-8" />
+	
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <form class="form">
+      <div>
+       
+
+        <div class="tabs" id="tab1">
+          <ul class="tab-header">
+            <li class="tab-title active" data-tab="signUp">Sign Up</li>
+            <li class="tab-title"data-tab="logIn">Log In</li>
+					</ul>
+					<div class="tab-content active" data-tab-content="signUp">
+						<h1> Sign up for free</h1>
+						<form action="">
+							<div class="row">
+								<div class="column">
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName"/>
+								</div>
+								<div class="column">
+										<label for="lastName">Last Name</label>
+										<input type="text" id="lastName" name="lastName"/>
+								</div>	
+							</div>
+							<div class="row">
+									<div class="column">
+											<label for="email">Email Address</label>
+											<input type="text" id="email" name="email"/>
+									</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-content" data-tab-content="logIn"">Test login</div>
+				</div>
+      </div>
+    </form>
+  </body>
+</html>
