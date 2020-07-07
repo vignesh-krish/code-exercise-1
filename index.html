@@ -7,40 +7,129 @@
   </head>
 
   <body>
-    <script src="script.js"></script>
-    <form class="form">
-      <div>
-       
+		<script src="script.js"></script>
+		<script src="login.js"></script>
+		<div class="fun-raiser-banner">
+				<div class="fund-status">
+						$167 still required for this project
+					</div>
+					<div class="progress-bar">
+							<div class="progress">
+									<span class="percent">30%</span>
+									<div class="bar"></div>
+							</div>
+					</div>
+					<div class="fund-raiser">
+						
+			
+						<p class="days-left">
+							<span class="days-hightlight amber">Only 3 days left </span>to fund this
+							project
+						</p>
+						<p>Join the 42 other donors</p>
+			
+						<div class="donation-box">
+							<form class="form">
+								<div class="row no-padding margin-bottom-small">
+									<div class="column">
+										<input type="text" value="50"/>
+										<span class="dollar-sign">$</span>
+									</div>
+									<div class="column">
+										<button class="btn big donate">Give now</button>
+									</div>
+								</div>
+								<div class="why-donate">
+									<a href="javascript:;">Why give $50?</a>
+								</div>
+								
+							</form>
+						</div>
+					
+					</div>
+					<div class="row no-padding">
+							<div class="column">
+								<button class="btn secondary rounded">Save for later</button>
+							</div>
+							<div class="column">
+									<button class="btn secondary rounded">Tel your friends</button>
+							</div>
+					</div>
+		</div>
+	
 
+
+      <div>
         <div class="tabs" id="tab1">
           <ul class="tab-header">
             <li class="tab-title active" data-tab="signUp">Sign Up</li>
             <li class="tab-title"data-tab="logIn">Log In</li>
 					</ul>
 					<div class="tab-content active" data-tab-content="signUp">
-						<h1> Sign up for free</h1>
-						<form action="">
+						<h1 class="sig-up-text"> Sign up for free</h1>
+						<form class="form">
 							<div class="row">
 								<div class="column">
-									<label for="firstName">First Name</label>
 									<input type="text" id="firstName"/>
+									<label for="firstName" class="required">First Name
+										<img src="images/profile-icon.svg" alt="Profile Icon" class="input-icon">
+									</label>
 								</div>
 								<div class="column">
-										<label for="lastName">Last Name</label>
 										<input type="text" id="lastName" name="lastName"/>
+										<label for="lastName" class="required">Last Name</label>
 								</div>	
 							</div>
 							<div class="row">
 									<div class="column">
-											<label for="email">Email Address</label>
 											<input type="text" id="email" name="email"/>
+											<label for="email" class="required">Email Address</label>	
 									</div>
+							</div>
+							<div class="row">
+									<div class="column">
+											<input type="text" id="pwd" name="password"/>
+											<label for="pwd" class="required">Set A Password
+													<img src="images/lock-icon.svg" alt="Profile Icon" class="input-icon">
+											</label>	
+									</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<button class="btn capitalize primary big">
+									Get Started
+								</button>
+							</div>
 							</div>
 						</form>
 					</div>
-					<div class="tab-content" data-tab-content="logIn"">Test login</div>
+					<div class="tab-content" data-tab-content="logIn"">
+							<form class="form">
+									<h1 class="sig-up-text"> Log In Here</h1>
+									<div class="row">
+											<div class="column">
+													<input type="text" id="loginEmail" name="email"/>
+													<label for="loginEmail" class="required">Email Address
+													</label>	
+											</div>
+									</div>
+									<div class="row">
+											<div class="column">
+													<input type="text" id="loginPwd" name="password"/>
+													<label for="loginPwd" class="required">Password</label>	
+											</div>
+									</div>
+									<div class="row">
+										<div class="column">
+											<button class="btn capitalize primary big">
+											Log In
+										</button>
+									</div>
+									</div>
+								</form>
+
+					</div>
 				</div>
       </div>
-    </form>
   </body>
 </html>
