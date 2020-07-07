@@ -1,5 +1,6 @@
 import "./styles.scss";
 import "./fund.scss";
+import { Tabs } from "./tabs";
 
 function appendToBody(buttons) {
   buttons.forEach(btn => {
@@ -13,8 +14,11 @@ function logButtonIndexAndText(btn) {
   const parentNode = btn.parentElement;
   const nodes = Array.from(parentNode.children);
   const index = nodes.indexOf(btn);
+  const logElement = document.getElementById("logElement");
   const btnText = btn.innerHTML;
-  console.log(`The ${btnText} button is at index ${index}`);
+  const txtToLog = `The ${btnText} button is at index ${index}`;
+  console.log(txtToLog);
+  logElement.innerHTML = txtToLog;
 }
 function createButtons(buttonText) {
   let buttons = [];
@@ -27,4 +31,9 @@ function createButtons(buttonText) {
 }
 
 const buttonTexts = ["Hello", "World", "Welcome", "Greetings", "Thank you"];
-createButtons(buttonTexts);
+window.onload = event => {
+  const tab1 = document.getElementById("tab1");
+  Tabs(tab1);
+
+  createButtons(buttonTexts);
+};
